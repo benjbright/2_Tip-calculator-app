@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <Link rel="stylesheet" href="style.css"></Link>
+    <title>Frontend Mentor | Tip calculator app</title>    
+  </head>
+  <body>
+    <!-- Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
+    person Total / person Reset -->
+    <header><img src="./images/logo.svg" alt="splitter logo"></header>
+    <div class="container">
+      <div class="input">
+        <label for="bill">Bill</label>
+        <input type="text" name="bill" id="bill-total">
+
+        <!-- Insert grid here -->
+        <div class="tip-display">
+          <label for="tip-display__container">Select Tip %</label>
+          <div class="tip-display__container">
+            <div class="tip-display__item" value="0.05" id="tip5">5%</div>
+            <div class="tip-display__item">10%</div>
+            <div class="tip-display__item">15%</div>
+            <div class="tip-display__item">25%</div>
+            <div class="tip-display__item">50%</div>
+            <div class="tip-display__item custom__item">Custom</div>
+          </div>
+        </div>
+
+        <label for="number-of-people">Number of people</label>
+        <input type="text" name="number-of-people" id="number-people">
+      </div>
+
+      <div class="display">
+        <div class="display__data">
+          <div class="display__data-left">
+            <p>Tip Amount</p>
+            <span>/ person</span>
+          </div>
+          <div class="display__data-right">
+            <p>$4.27</p>
+          </div>
+        </div>
+
+        <div class="display__data">
+          <div class="display__data-left">
+            <p>Total</p>
+            <span>/ person</span>
+          </div>
+          <div class="display__data-right">
+            <p>$32.79</p>
+          </div>
+        </div>
+        <button class="reset-btn">
+          RESET
+        </button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >
+      Coded by <a href="#">Ben Bright</a>.
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Karla:wght@400;800&family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace, sans-serif;
+  font-size: 16px;
+  background: hsl(185, 41%, 84%);
+}
+
+/* HEADER AND LOGO */
+header {
+  margin: 2em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CONTAINER */
+.container {
+  display: flex;
+  flex-direction: column;
+  background: hsl(0, 0%, 100%);
+  width: 100vw;
+  max-width: 375px;
+  height: 80vh;
+  border-radius: 15px;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+/* INPUT SECTION */
+.input {
+  height: 60%;
+  width: 100%;
+  border: 1px dashed red;
+  padding: 0 1em 1em 1em;
+}
+
+label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: hsl(186, 14%, 43%);
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+  background: hsl(189, 41%, 97%);
+  border: none;
+  border-radius: 2px;
+}
+
+.tip-display__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.tip-display__item {
+  background: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 0.2em 0;
+}
+
+.custom__item {
+  background: hsl(189, 41%, 97%);
+  color: hsl(186, 14%, 43%);
+}
+
+/* DISPLAY SECTION */
+.display {
+  height: 40%;
+  width: 100%;
+  border: 1px solid orange;
+  background: hsl(183, 100%, 15%);
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.display__data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.display__data p {
+  margin: 0;
+}
+
+.display__data-left p {
+  color: hsl(0, 0%, 100%);
+  font-size: 0.75rem;
+  margin-bottom: -0.25em;
+}
+
+.display__data-left span {
+  font-size: 0.75rem;
+  color: hsl(184, 14%, 56%);
+  margin: 0;
+  font-family: inherit;
+}
+
+.display__data-right p {
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(172, 67%, 45%);
+}
+
+.reset-btn {
+  background: hsl(172, 67%, 45%);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+  color: hsl(183, 100%, 15%);
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.4em 0;
+}
+
+/* FOOTER */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 2em auto;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  display: block;
+  margin-bottom: 0.25em;
+}
