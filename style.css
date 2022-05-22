@@ -27,7 +27,7 @@ header {
   background: hsl(0, 0%, 100%);
   width: 100vw;
   max-width: 375px;
-  height: 80vh;
+  height: 80opx;
   border-radius: 15px;
   padding: 1em;
   margin: 0 auto;
@@ -50,10 +50,28 @@ label {
 input {
   display: block;
   width: 100%;
-  padding: 0.5em;
+  padding: 0.3em;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1.1rem;
   background: hsl(189, 41%, 97%);
   border: none;
   border-radius: 2px;
+}
+
+#total-bill {
+  background-image: url(./images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  text-align: right;
+  /* padding-left: 20px; */
+}
+
+#number-people {
+  background-image: url(./images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  text-align: right;
 }
 
 .tip-display__container {
@@ -73,6 +91,11 @@ input {
   justify-content: center;
   border-radius: 5px;
   padding: 0.2em 0;
+}
+
+.tip-display__item:hover {
+  background: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
 }
 
 .custom__item {
@@ -120,7 +143,7 @@ input {
   color: hsl(172, 67%, 45%);
 }
 
-.reset-btn {
+.reset {
   background: hsl(172, 67%, 45%);
   font-family: inherit;
   font-weight: 700;
