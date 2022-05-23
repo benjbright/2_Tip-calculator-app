@@ -15,7 +15,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://your-solution-url.com)
-- Live Site URL: (https://your-live-site-url.com)
+- Live Site URL: (https://benjbright.github.io/2_Tip-calculator-app/)
 
 ## My process
 
