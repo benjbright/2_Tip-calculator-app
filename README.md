@@ -14,7 +14,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/tip-calculator-app-using-css-and-javascript-3F8_mIZV62)
 - Live Site URL: (https://benjbright.github.io/2_Tip-calculator-app/)
 
 ## My process
