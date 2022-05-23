@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -15,13 +14,11 @@
     <title>Frontend Mentor | Tip calculator app</title>    
   </head>
   <body>
-    <!-- Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-    person Total / person Reset -->
     <header><img src="./images/logo.svg" alt="splitter logo"></header>
     <div class="container">
       <div class="input">
         <label for="bill">Bill</label>
-        <input type="number" id="total-bill"/>
+        <input type="text" id="total-bill"/>
 
         <!-- Insert grid here -->
         <div class="tip-display">
@@ -32,12 +29,15 @@
             <div class="tip-display__item" id="tip15">15%</div>
             <div class="tip-display__item" id="tip25">25%</div>
             <div class="tip-display__item" id="tip50">50%</div>
-            <div class="tip-display__item custom__item">Custom</div>
+            <input type="text" placeholder="Custom" id="custom-value">
           </div>
         </div>
 
-        <label for="number-of-people">Number of people</label>
-        <input type="number" id="number-people">
+        <div class="num-people-text">
+          <label for="number-of-people">Number of people</label>
+          <p id="warning">Can't be zero</p>
+        </div>        
+        <input type="text" id="number-people">
       </div>
 
       <div class="display">
@@ -47,7 +47,7 @@
             <span>/ person</span>
           </div>
           <div class="display__data-right">
-            <p id="display-tip">$4.27</p>
+            <p id="display-tip">$0.00</p>
           </div>
         </div>
 
@@ -57,7 +57,7 @@
             <span>/ person</span>
           </div>
           <div class="display__data-right">
-            <p id="display-total">$32.79</p>
+            <p id="display-total">$0.00</p>
           </div>
         </div>
         <button class="reset" id="reset-btn">
@@ -71,7 +71,7 @@
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >
-      Coded by <a href="#">Ben Bright</a>.
+      Coded by <a href="https://github.com/benjbright">Ben Bright</a>.
     </div>
     <script src="index.js"></script>
   </body>

@@ -29,16 +29,14 @@ header {
   max-width: 375px;
   height: 80opx;
   border-radius: 15px;
-  padding: 1em;
+  padding: 1.5em;
   margin: 0 auto;
 }
 
-/* INPUT SECTION */
+/* INPUT (TOP / LEFT) SECTION */
 .input {
   height: 60%;
   width: 100%;
-  border: 1px dashed red;
-  padding: 0 1em 1em 1em;
 }
 
 label {
@@ -57,21 +55,36 @@ input {
   background: hsl(189, 41%, 97%);
   border: none;
   border-radius: 2px;
+  text-align: center;
 }
 
 #total-bill {
   background-image: url(./images/icon-dollar.svg);
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: 5% 50%;
   text-align: right;
-  /* padding-left: 20px; */
+}
+
+#total-bill:focus,
+#total-bill:hover {
+  outline: 1px solid hsl(172, 67%, 45%);
 }
 
 #number-people {
   background-image: url(./images/icon-person.svg);
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: 5% 50%;
   text-align: right;
+}
+
+#number-people:focus,
+#number-people:hover {
+  outline: 1px solid orange;
+}
+
+.tip-display {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .tip-display__container {
@@ -91,6 +104,7 @@ input {
   justify-content: center;
   border-radius: 5px;
   padding: 0.2em 0;
+  cursor: pointer;
 }
 
 .tip-display__item:hover {
@@ -98,19 +112,38 @@ input {
   color: hsl(183, 100%, 15%);
 }
 
-.custom__item {
-  background: hsl(189, 41%, 97%);
-  color: hsl(186, 14%, 43%);
+#custom-value {
+  cursor: pointer;
 }
 
-/* DISPLAY SECTION */
+#custom-value:hover,
+#custom-value:focus {
+  outline: 1px solid hsl(172, 67%, 45%);
+}
+
+.num-people-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.25em;
+}
+
+#warning {
+  display: none;
+  margin: 0ch;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: red;
+}
+
+/* DISPLAY SECTION (BOTTOM / RIGHT) */
 .display {
   height: 40%;
   width: 100%;
-  border: 1px solid orange;
   background: hsl(183, 100%, 15%);
   border-radius: 10px;
   padding: 1em;
+  margin-top: 1em;
 }
 
 .display__data {
@@ -143,6 +176,8 @@ input {
   color: hsl(172, 67%, 45%);
 }
 
+/* RESET BUTTON */
+
 .reset {
   background: hsl(172, 67%, 45%);
   font-family: inherit;
@@ -153,6 +188,21 @@ input {
   border-radius: 5px;
   width: 100%;
   padding: 0.4em 0;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background: hsl(185, 41%, 84%);
+}
+
+.reset-inactive {
+  background: hsl(186, 14%, 43%);
+  color: hsl(186, 14%, 43%);
+}
+
+.reset-inactive:hover {
+  background: hsl(186, 14%, 43%);
+  color: hsl(186, 14%, 43%);
 }
 
 /* FOOTER */
@@ -166,4 +216,39 @@ input {
   color: hsl(228, 45%, 44%);
   display: block;
   margin-bottom: 0.25em;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 700px) {
+  /* For tablets and laptop screens */
+  .container {
+    flex-direction: row;
+    align-items: top;
+    max-width: 700px;
+  }
+
+  .input {
+    margin-right: 1em;
+  }
+
+  .display {
+    margin-top: 0;
+    padding-top: 2em;
+  }
+
+  .tip-display {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .tip-display__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  .reset {
+    margin-top: 7em;
+  }
 }
